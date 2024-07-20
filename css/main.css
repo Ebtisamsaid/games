@@ -1,7 +1,12 @@
 /* custom atrribute */
+@media screen and (min-width:700px) {
+    .navbar{position: sticky;
+        top:0;
+    }
+    
+}
 
-
-main{
+.mainhome{
     margin-top: 15%;
 }
 [data-theme="dark"]{
@@ -62,7 +67,7 @@ form .btn:hover{
     color:var(--text-color) ;
 }
 .navbar  .container .collapse li a:hover{
-    color: blue;
+    color: aqua;
 }
 
 .navbar .container  .log li a:hover{

@@ -1,0 +1,136 @@
+/* custom atrribute */
+
+
+
+[data-theme="dark"]{
+    --bachground-color:#272B30;
+    --text-color: white;
+   --second-color:#545659;
+    --btn-color:#121820;
+}
+
+[data-theme="light"]{
+    --bachground-color:white;
+    --text-color: #424446;
+    --second-color: wheat;
+    --btn-color:#282a2d;
+}
+
+body{
+    box-sizing: border-box;
+    min-width: 100%;
+  max-height: 100%;
+
+    background-color: var( --bachground-color);
+}
+h1{
+   color:var( --text-color)
+}
+.col-md-7{background-color: var(--second-color);
+
+}
+.btn-color{
+    color: var( --text-color);
+    background-color:var(--btn-color) ;
+}
+footer p{
+    color: var( --text-color);
+}
+input {
+    background-color: #272B30;
+}
+form .btn:hover{
+    background-color: #696a6c;
+    color: white;
+}
+.navbar{
+    border-bottom: black 1px solid;
+    color: white;
+}
+.card{
+    background-color:var(--bachground-color) ;
+    color:var( --text-color) ;
+}
+.card:hover{
+    transform: scale(1.1,1.1)  ;
+    transition: 0.4s;
+}
+.navbar  .container .collapse li a{
+    
+    color:var(--text-color) ;
+}
+.navbar  .container .collapse li a:hover{
+    color: blue;
+}
+
+.navbar .container  .log li a:hover{
+    color: aqua;
+}
+.navbar  .container .collapse li  .active{
+    color: blue;
+}
+
+
+/* HTML: <div class="loader"></div> */
+.loading{
+    background-color: #4244469a;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+    .loader {
+        transform: scale(0.5);
+        display: inline-block;
+        height: 1em;
+        width: 1em;
+        line-height: 1;
+        vertical-align: middle;
+        border-radius: 1em;
+        transition: all 150ms linear 0s;
+        color: #1E4D92;
+        box-shadow: 1.618033988747495em
+            1.1755705045882492em 0
+            -0.0875em,0.6180339887421291em
+            1.9021130325928304em 0
+            -0.0875em,-0.6180339887615437em
+            1.9021130325865223em 0
+            -0.0875em,-1.618033988759494em
+            1.1755705045717344em 0
+            -0.0875em,-2em
+            -2.041364786902785e-11em 0
+            -0.0875em,-1.6180339887354962em
+            -1.1755705046047644em 0
+            -0.0875em,-0.6180339887227142em
+            -1.9021130325991387em 0
+            -0.0875em,0.6180339887809577em
+            -1.9021130325802142em 0
+            -0.0875em,1.6180339887714932em
+            -1.1755705045552187em 0
+            -0.0875em;
+        animation: spinDots 1000ms infinite steps(10);
+      }
+      @keyframes spinDots {
+        0% {
+          transform: scale(0.5) rotate(0);
+          animation-timing-function: cubic-bezier(.55,.055,.675,.19);
+        }
+        50% {
+          transform: scale(0.5) rotate(180deg);
+          animation-timing-function: cubic-bezier(.215,.61,.355,1);
+        }
+        100% {
+          transform: scale(0.5) rotate(360deg);
+        }
+      }
+   .container .col-md-8 .breadcrumb li a{
+    text-decoration: none;
+    color: white;
+   }

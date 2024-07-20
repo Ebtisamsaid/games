@@ -93,3 +93,19 @@ function pausevideo(event){
  function showdetails(id){
     location.href=`./details.html?id=${id}`
  }
+
+
+let secoffset= document.querySelector('.navbar').offsetTop
+console.log(secoffset);
+    
+    console.log(window.addEventListener('scroll',function(){
+ let currnscroll= window.scrollY;
+ if(currnscroll>secoffset){
+    document.querySelector('.navbar').classList.add('top-0')
+    // document.querySelector('.navbar').classList.add('top-0')
+ }else{
+    document.querySelector('.navbar').classList.remove('top-0')
+ }
+ console.log(window.scrollY);
+
+    }));

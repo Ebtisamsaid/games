@@ -1,7 +1,9 @@
 /* custom atrribute */
 
 
-
+main{
+    margin-top: 15%;
+}
 [data-theme="dark"]{
     --bachground-color:#272B30;
     --text-color: white;

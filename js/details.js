@@ -1,4 +1,6 @@
-
+$('.fa-sharp').click(function(){
+    location.href="./home.html"
+})
 
  const searchparam=location.search
  const param=new URLSearchParams(searchparam)
